@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class adminLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class adminLogin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(adminLogin))
         Me.adminLogBgPanel = New System.Windows.Forms.Panel()
@@ -34,7 +34,6 @@ Partial Class adminLogin
         Me.Label4 = New System.Windows.Forms.Label()
         Me.adminPassLogTextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.adminLogBgPanel.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,7 +84,6 @@ Partial Class adminLogin
         'adminLogPanel
         '
         Me.adminLogPanel.BackColor = System.Drawing.Color.MediumBlue
-        Me.adminLogPanel.Controls.Add(Me.Button1)
         Me.adminLogPanel.Controls.Add(Me.adminUserLogTextBox)
         Me.adminLogPanel.Controls.Add(Me.adminLogButton)
         Me.adminLogPanel.Controls.Add(Me.Label1)
@@ -157,17 +155,6 @@ Partial Class adminLogin
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "USERNAME"
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Goldenrod
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(82, 285)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 29)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "LOGIN"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'adminLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -198,5 +185,4 @@ Partial Class adminLogin
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
 End Class
