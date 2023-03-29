@@ -24,6 +24,9 @@ Partial Class adminLogin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(adminLogin))
         Me.adminLogBgPanel = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.adminLogPanel = New System.Windows.Forms.Panel()
         Me.adminUserLogTextBox = New System.Windows.Forms.TextBox()
         Me.adminLogButton = New System.Windows.Forms.Button()
@@ -31,14 +34,12 @@ Partial Class adminLogin
         Me.Label4 = New System.Windows.Forms.Label()
         Me.adminPassLogTextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.adminLogBgPanel.SuspendLayout()
-        Me.adminLogPanel.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.adminLogPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'adminLogBgPanel
@@ -52,9 +53,39 @@ Partial Class adminLogin
         Me.adminLogBgPanel.Size = New System.Drawing.Size(427, 460)
         Me.adminLogBgPanel.TabIndex = 10
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(160, 239)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(100, 90)
+        Me.PictureBox3.TabIndex = 5
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(212, 132)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(98, 101)
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(116, 132)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(90, 101)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'adminLogPanel
         '
         Me.adminLogPanel.BackColor = System.Drawing.Color.MediumBlue
+        Me.adminLogPanel.Controls.Add(Me.Button1)
         Me.adminLogPanel.Controls.Add(Me.adminUserLogTextBox)
         Me.adminLogPanel.Controls.Add(Me.adminLogButton)
         Me.adminLogPanel.Controls.Add(Me.Label1)
@@ -126,34 +157,16 @@ Partial Class adminLogin
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "USERNAME"
         '
-        'PictureBox3
+        'Button1
         '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(160, 239)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(100, 90)
-        Me.PictureBox3.TabIndex = 5
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(212, 132)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(98, 101)
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(116, 132)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(90, 101)
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
+        Me.Button1.BackColor = System.Drawing.Color.Goldenrod
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(82, 285)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(87, 29)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "LOGIN"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'adminLogin
         '
@@ -165,11 +178,11 @@ Partial Class adminLogin
         Me.Name = "adminLogin"
         Me.Text = "Admin Login"
         Me.adminLogBgPanel.ResumeLayout(False)
-        Me.adminLogPanel.ResumeLayout(False)
-        Me.adminLogPanel.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.adminLogPanel.ResumeLayout(False)
+        Me.adminLogPanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -185,4 +198,5 @@ Partial Class adminLogin
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button1 As Button
 End Class
