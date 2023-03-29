@@ -43,7 +43,7 @@ Partial Class adminLogin
         '
         'adminLogBgPanel
         '
-        Me.adminLogBgPanel.BackColor = System.Drawing.Color.MediumBlue
+        Me.adminLogBgPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.adminLogBgPanel.Controls.Add(Me.PictureBox3)
         Me.adminLogBgPanel.Controls.Add(Me.PictureBox2)
         Me.adminLogBgPanel.Controls.Add(Me.PictureBox1)
@@ -83,7 +83,7 @@ Partial Class adminLogin
         '
         'adminLogPanel
         '
-        Me.adminLogPanel.BackColor = System.Drawing.Color.MediumBlue
+        Me.adminLogPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(113, Byte), Integer))
         Me.adminLogPanel.Controls.Add(Me.adminUserLogTextBox)
         Me.adminLogPanel.Controls.Add(Me.adminLogButton)
         Me.adminLogPanel.Controls.Add(Me.Label1)

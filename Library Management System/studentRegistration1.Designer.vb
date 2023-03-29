@@ -45,7 +45,7 @@ Partial Class studentRegistration1
         '
         'studentReg1BgPanel
         '
-        Me.studentReg1BgPanel.BackColor = System.Drawing.Color.MediumBlue
+        Me.studentReg1BgPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.studentReg1BgPanel.Controls.Add(Me.PictureBox3)
         Me.studentReg1BgPanel.Controls.Add(Me.PictureBox2)
         Me.studentReg1BgPanel.Controls.Add(Me.PictureBox1)
@@ -85,7 +85,7 @@ Partial Class studentRegistration1
         '
         'studentReg1Panel
         '
-        Me.studentReg1Panel.BackColor = System.Drawing.Color.MediumBlue
+        Me.studentReg1Panel.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(113, Byte), Integer))
         Me.studentReg1Panel.Controls.Add(Me.Label3)
         Me.studentReg1Panel.Controls.Add(Me.studentRegIdTextBox)
         Me.studentReg1Panel.Controls.Add(Me.studentRegNameTextBox)
