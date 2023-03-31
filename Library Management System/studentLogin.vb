@@ -22,4 +22,12 @@
     Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
+
+    Private Sub studentLogButton_Click(sender As Object, e As EventArgs) Handles studentLogButton.Click
+        Try
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
 End Class
