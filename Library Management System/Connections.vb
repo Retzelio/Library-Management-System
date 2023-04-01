@@ -17,7 +17,7 @@ Module Module1
 
     Sub openConnnection() 'subroutine that doesnt return a value but performs a specific tasks
 
-        connection.ConnectionString = "server=localhost;username=root;password=;database=libraryManagementSystem" ' this called a connections string, it allows us
+        connection.ConnectionString = "Server=127.0.0.1;Port=3307;Database=librarymanagementsystem;Uid=root;Pwd=;" ' this called a connections string, it allows us
         'to connect to our database
         connection.Open() ' this opens the connection between the system and the database, without opening it, we cannot access the datas in our table
     End Sub

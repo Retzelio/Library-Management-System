@@ -1,4 +1,8 @@
-﻿Public Class studentLogin
+﻿
+Imports System.Data.Common
+Imports MySql.Data.MySqlClient
+
+Public Class studentLogin
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -24,10 +28,35 @@
     End Sub
 
     Private Sub studentLogButton_Click(sender As Object, e As EventArgs) Handles studentLogButton.Click
+        openConnnection()
+
+
+
         Try
+            sql = "SELECT * FROM student WHERE username = '" & studentUserLogTextBox.Text() & "' AND password = '" & studentPassLogTextBox.Text() & "'"
+            cmd = New MySqlCommand(sql, connection)
+            da = New MySqlDataAdapter(cmd)
+            dt = New DataTable
+            da.Fill(dt)
+
+            If dt.Rows.Count > 0 Then
+                Dim first = dt.Rows(0).Item(6)
+                Dim second = dt.Rows(0).Item(7)
+
+                If first = studentUserLogTextBox.Text() And second = studentPassLogTextBox.Text() Then
+                    MessageBox.Show("Login Success!")
+
+
+                Else
+                    MessageBox.Show("Incorrect")
+                End If
+
+            End If
+
 
         Catch ex As Exception
-
+            MessageBox.Show(ex.Message.ToString())
         End Try
+        connection.Close()
     End Sub
 End Class
