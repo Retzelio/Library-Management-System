@@ -90,12 +90,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connections.vb" />
-    <Compile Include="studentRegistration2.Designer.vb">
-      <DependentUpon>studentRegistration2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="studentRegistration2.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="studentRegistration1.Designer.vb">
       <DependentUpon>studentRegistration1.vb</DependentUpon>
     </Compile>
@@ -132,9 +126,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="adminRegistration.resx">
       <DependentUpon>adminRegistration.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="studentRegistration2.resx">
-      <DependentUpon>studentRegistration2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="studentLogin.resx">
       <DependentUpon>studentLogin.vb</DependentUpon>

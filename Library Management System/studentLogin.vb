@@ -46,7 +46,6 @@ Public Class studentLogin
                 If first = studentUserLogTextBox.Text() And second = studentPassLogTextBox.Text() Then
                     MessageBox.Show("Login Success!")
 
-
                 Else
                     MessageBox.Show("Incorrect")
                 End If
