@@ -1,6 +1,7 @@
 ﻿
 Imports System.Data.Common
 Imports MySql.Data.MySqlClient
+Imports Mysqlx
 
 Public Class studentLogin
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -40,12 +41,12 @@ Public Class studentLogin
             da.Fill(dt)
 
             If dt.Rows.Count > 0 Then
-                Dim first = dt.Rows(0).Item(6)
-                Dim second = dt.Rows(0).Item(7)
+                Dim username = dt.Rows(0).Item(6)
+                Dim password = dt.Rows(0).Item(7)
 
-                If first = studentUserLogTextBox.Text() And second = studentPassLogTextBox.Text() Then
+                If username = studentUserLogTextBox.Text() And password = studentPassLogTextBox.Text() Then
                     MessageBox.Show("Login Success!")
-
+                    connection.Close()
                 Else
                     MessageBox.Show("Incorrect")
                 End If

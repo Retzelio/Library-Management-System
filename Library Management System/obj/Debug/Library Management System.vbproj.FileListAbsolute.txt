@@ -17,7 +17,6 @@ C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Libra
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library Management System.exe.config
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.adminLogin.resources
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.adminRegistration.resources
-C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.studentRegistration2.resources
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.studentLogin.resources
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.Resources.resources
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.studentRegistration1.resources
