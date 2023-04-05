@@ -22,4 +22,8 @@
     Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
+
+    Private Sub studentUserLogTextBox_TextChanged(sender As Object, e As EventArgs) Handles studentUserLogTextBox.TextChanged
+
+    End Sub
 End Class
