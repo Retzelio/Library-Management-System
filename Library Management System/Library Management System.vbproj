@@ -104,6 +104,18 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="manageUsers.Designer.vb">
+      <DependentUpon>manageUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manageUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageBooks.Designer.vb">
+      <DependentUpon>manageBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manageBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Home.Designer.vb">
       <DependentUpon>Home.vb</DependentUpon>
     </Compile>
@@ -150,8 +162,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="manageBooks.resx">
+      <DependentUpon>manageBooks.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageUsers.resx">
+      <DependentUpon>manageUsers.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="studentLogin.resx">
       <DependentUpon>studentLogin.vb</DependentUpon>

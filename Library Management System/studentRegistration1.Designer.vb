@@ -28,8 +28,12 @@ Partial Class studentRegistration1
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.studentReg1Panel = New System.Windows.Forms.Panel()
+        Me.studentRegLNameTextBox = New System.Windows.Forms.TextBox()
+        Me.lastNameLbl = New System.Windows.Forms.Label()
         Me.courseLbl = New System.Windows.Forms.Label()
+        Me.studentRegYearSecTextBox = New System.Windows.Forms.TextBox()
         Me.studentRegCourseTxtBox = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.studentUserRegTextBox = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.studentPassRegTextBox = New System.Windows.Forms.TextBox()
@@ -39,11 +43,7 @@ Partial Class studentRegistration1
         Me.studentRegFNameTextBox = New System.Windows.Forms.TextBox()
         Me.studentRegLogButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.studentRegYearSecTextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.studentRegLNameTextBox = New System.Windows.Forms.TextBox()
-        Me.lastNameLbl = New System.Windows.Forms.Label()
         Me.studentReg1BgPanel.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,6 +115,25 @@ Partial Class studentRegistration1
         Me.studentReg1Panel.Size = New System.Drawing.Size(341, 450)
         Me.studentReg1Panel.TabIndex = 1
         '
+        'studentRegLNameTextBox
+        '
+        Me.studentRegLNameTextBox.Location = New System.Drawing.Point(71, 112)
+        Me.studentRegLNameTextBox.Multiline = True
+        Me.studentRegLNameTextBox.Name = "studentRegLNameTextBox"
+        Me.studentRegLNameTextBox.Size = New System.Drawing.Size(180, 22)
+        Me.studentRegLNameTextBox.TabIndex = 2
+        '
+        'lastNameLbl
+        '
+        Me.lastNameLbl.AutoSize = True
+        Me.lastNameLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lastNameLbl.ForeColor = System.Drawing.Color.White
+        Me.lastNameLbl.Location = New System.Drawing.Point(68, 93)
+        Me.lastNameLbl.Name = "lastNameLbl"
+        Me.lastNameLbl.Size = New System.Drawing.Size(80, 16)
+        Me.lastNameLbl.TabIndex = 3
+        Me.lastNameLbl.Text = "LASTNAME"
+        '
         'courseLbl
         '
         Me.courseLbl.AutoSize = True
@@ -126,6 +145,14 @@ Partial Class studentRegistration1
         Me.courseLbl.TabIndex = 14
         Me.courseLbl.Text = "COURSE"
         '
+        'studentRegYearSecTextBox
+        '
+        Me.studentRegYearSecTextBox.Location = New System.Drawing.Point(72, 213)
+        Me.studentRegYearSecTextBox.Multiline = True
+        Me.studentRegYearSecTextBox.Name = "studentRegYearSecTextBox"
+        Me.studentRegYearSecTextBox.Size = New System.Drawing.Size(180, 22)
+        Me.studentRegYearSecTextBox.TabIndex = 4
+        '
         'studentRegCourseTxtBox
         '
         Me.studentRegCourseTxtBox.Location = New System.Drawing.Point(72, 164)
@@ -133,6 +160,17 @@ Partial Class studentRegistration1
         Me.studentRegCourseTxtBox.Name = "studentRegCourseTxtBox"
         Me.studentRegCourseTxtBox.Size = New System.Drawing.Size(180, 22)
         Me.studentRegCourseTxtBox.TabIndex = 3
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(69, 194)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(138, 16)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "YEAR AND SECTION"
         '
         'studentUserRegTextBox
         '
@@ -222,25 +260,6 @@ Partial Class studentRegistration1
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "STUDENT REGISTER"
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(69, 194)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(138, 16)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "YEAR AND SECTION"
-        '
-        'studentRegYearSecTextBox
-        '
-        Me.studentRegYearSecTextBox.Location = New System.Drawing.Point(72, 213)
-        Me.studentRegYearSecTextBox.Multiline = True
-        Me.studentRegYearSecTextBox.Name = "studentRegYearSecTextBox"
-        Me.studentRegYearSecTextBox.Size = New System.Drawing.Size(180, 22)
-        Me.studentRegYearSecTextBox.TabIndex = 4
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -251,25 +270,6 @@ Partial Class studentRegistration1
         Me.Label2.Size = New System.Drawing.Size(85, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "FIRSTNAME"
-        '
-        'studentRegLNameTextBox
-        '
-        Me.studentRegLNameTextBox.Location = New System.Drawing.Point(71, 112)
-        Me.studentRegLNameTextBox.Multiline = True
-        Me.studentRegLNameTextBox.Name = "studentRegLNameTextBox"
-        Me.studentRegLNameTextBox.Size = New System.Drawing.Size(180, 22)
-        Me.studentRegLNameTextBox.TabIndex = 2
-        '
-        'lastNameLbl
-        '
-        Me.lastNameLbl.AutoSize = True
-        Me.lastNameLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lastNameLbl.ForeColor = System.Drawing.Color.White
-        Me.lastNameLbl.Location = New System.Drawing.Point(68, 93)
-        Me.lastNameLbl.Name = "lastNameLbl"
-        Me.lastNameLbl.Size = New System.Drawing.Size(80, 16)
-        Me.lastNameLbl.TabIndex = 3
-        Me.lastNameLbl.Text = "LASTNAME"
         '
         'studentRegistration1
         '
