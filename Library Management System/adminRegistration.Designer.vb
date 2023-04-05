@@ -30,12 +30,14 @@ Partial Class adminRegistration
         Me.adminRegPanel = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.adminPassRegTextBox = New System.Windows.Forms.TextBox()
-        Me.adminNameRegTextBox = New System.Windows.Forms.TextBox()
+        Me.adminFnameRegTextBox = New System.Windows.Forms.TextBox()
         Me.adminRegButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.adminUserRegTextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.adminLnameRegTextBox = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.adminRegBgPanel.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,9 +88,11 @@ Partial Class adminRegistration
         'adminRegPanel
         '
         Me.adminRegPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(113, Byte), Integer))
+        Me.adminRegPanel.Controls.Add(Me.adminLnameRegTextBox)
+        Me.adminRegPanel.Controls.Add(Me.Label5)
         Me.adminRegPanel.Controls.Add(Me.Label3)
         Me.adminRegPanel.Controls.Add(Me.adminPassRegTextBox)
-        Me.adminRegPanel.Controls.Add(Me.adminNameRegTextBox)
+        Me.adminRegPanel.Controls.Add(Me.adminFnameRegTextBox)
         Me.adminRegPanel.Controls.Add(Me.adminRegButton)
         Me.adminRegPanel.Controls.Add(Me.Label1)
         Me.adminRegPanel.Controls.Add(Me.Label4)
@@ -97,14 +101,14 @@ Partial Class adminRegistration
         Me.adminRegPanel.Location = New System.Drawing.Point(48, 40)
         Me.adminRegPanel.Name = "adminRegPanel"
         Me.adminRegPanel.Size = New System.Drawing.Size(259, 355)
-        Me.adminRegPanel.TabIndex = 11
+        Me.adminRegPanel.TabIndex = 0
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(33, 199)
+        Me.Label3.Location = New System.Drawing.Point(36, 248)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(86, 16)
         Me.Label3.TabIndex = 8
@@ -112,28 +116,28 @@ Partial Class adminRegistration
         '
         'adminPassRegTextBox
         '
-        Me.adminPassRegTextBox.Location = New System.Drawing.Point(36, 218)
+        Me.adminPassRegTextBox.Location = New System.Drawing.Point(39, 267)
         Me.adminPassRegTextBox.Multiline = True
         Me.adminPassRegTextBox.Name = "adminPassRegTextBox"
         Me.adminPassRegTextBox.Size = New System.Drawing.Size(180, 22)
-        Me.adminPassRegTextBox.TabIndex = 7
+        Me.adminPassRegTextBox.TabIndex = 4
         '
-        'adminNameRegTextBox
+        'adminFnameRegTextBox
         '
-        Me.adminNameRegTextBox.Location = New System.Drawing.Point(36, 96)
-        Me.adminNameRegTextBox.Multiline = True
-        Me.adminNameRegTextBox.Name = "adminNameRegTextBox"
-        Me.adminNameRegTextBox.Size = New System.Drawing.Size(180, 22)
-        Me.adminNameRegTextBox.TabIndex = 6
+        Me.adminFnameRegTextBox.Location = New System.Drawing.Point(36, 96)
+        Me.adminFnameRegTextBox.Multiline = True
+        Me.adminFnameRegTextBox.Name = "adminFnameRegTextBox"
+        Me.adminFnameRegTextBox.Size = New System.Drawing.Size(180, 22)
+        Me.adminFnameRegTextBox.TabIndex = 1
         '
         'adminRegButton
         '
         Me.adminRegButton.BackColor = System.Drawing.Color.Goldenrod
         Me.adminRegButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.adminRegButton.Location = New System.Drawing.Point(36, 274)
+        Me.adminRegButton.Location = New System.Drawing.Point(36, 308)
         Me.adminRegButton.Name = "adminRegButton"
         Me.adminRegButton.Size = New System.Drawing.Size(180, 29)
-        Me.adminRegButton.TabIndex = 1
+        Me.adminRegButton.TabIndex = 5
         Me.adminRegButton.Text = "REGISTER"
         Me.adminRegButton.UseVisualStyleBackColor = False
         '
@@ -153,7 +157,7 @@ Partial Class adminRegistration
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(33, 137)
+        Me.Label4.Location = New System.Drawing.Point(36, 186)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(84, 16)
         Me.Label4.TabIndex = 5
@@ -161,11 +165,11 @@ Partial Class adminRegistration
         '
         'adminUserRegTextBox
         '
-        Me.adminUserRegTextBox.Location = New System.Drawing.Point(36, 156)
+        Me.adminUserRegTextBox.Location = New System.Drawing.Point(39, 205)
         Me.adminUserRegTextBox.Multiline = True
         Me.adminUserRegTextBox.Name = "adminUserRegTextBox"
         Me.adminUserRegTextBox.Size = New System.Drawing.Size(180, 22)
-        Me.adminUserRegTextBox.TabIndex = 1
+        Me.adminUserRegTextBox.TabIndex = 3
         '
         'Label2
         '
@@ -174,9 +178,28 @@ Partial Class adminRegistration
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(33, 77)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 16)
+        Me.Label2.Size = New System.Drawing.Size(80, 16)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "NAME"
+        Me.Label2.Text = "LASTNAME"
+        '
+        'adminLnameRegTextBox
+        '
+        Me.adminLnameRegTextBox.Location = New System.Drawing.Point(39, 150)
+        Me.adminLnameRegTextBox.Multiline = True
+        Me.adminLnameRegTextBox.Name = "adminLnameRegTextBox"
+        Me.adminLnameRegTextBox.Size = New System.Drawing.Size(180, 22)
+        Me.adminLnameRegTextBox.TabIndex = 2
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(36, 131)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(85, 16)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "FIRSTNAME"
         '
         'adminRegistration
         '
@@ -201,7 +224,7 @@ Partial Class adminRegistration
     Friend WithEvents adminRegPanel As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents adminPassRegTextBox As TextBox
-    Friend WithEvents adminNameRegTextBox As TextBox
+    Friend WithEvents adminFnameRegTextBox As TextBox
     Friend WithEvents adminRegButton As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
@@ -210,4 +233,6 @@ Partial Class adminRegistration
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents adminLnameRegTextBox As TextBox
+    Friend WithEvents Label5 As Label
 End Class

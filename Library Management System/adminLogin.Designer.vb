@@ -93,7 +93,7 @@ Partial Class adminLogin
         Me.adminLogPanel.Location = New System.Drawing.Point(48, 40)
         Me.adminLogPanel.Name = "adminLogPanel"
         Me.adminLogPanel.Size = New System.Drawing.Size(259, 355)
-        Me.adminLogPanel.TabIndex = 9
+        Me.adminLogPanel.TabIndex = 1
         '
         'adminUserLogTextBox
         '
@@ -101,7 +101,7 @@ Partial Class adminLogin
         Me.adminUserLogTextBox.Multiline = True
         Me.adminUserLogTextBox.Name = "adminUserLogTextBox"
         Me.adminUserLogTextBox.Size = New System.Drawing.Size(180, 22)
-        Me.adminUserLogTextBox.TabIndex = 6
+        Me.adminUserLogTextBox.TabIndex = 0
         '
         'adminLogButton
         '
@@ -110,7 +110,7 @@ Partial Class adminLogin
         Me.adminLogButton.Location = New System.Drawing.Point(36, 250)
         Me.adminLogButton.Name = "adminLogButton"
         Me.adminLogButton.Size = New System.Drawing.Size(180, 29)
-        Me.adminLogButton.TabIndex = 1
+        Me.adminLogButton.TabIndex = 2
         Me.adminLogButton.Text = "LOGIN"
         Me.adminLogButton.UseVisualStyleBackColor = False
         '

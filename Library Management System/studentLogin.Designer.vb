@@ -47,7 +47,7 @@ Partial Class studentLogin
         Me.studentUserLogTextBox.Multiline = True
         Me.studentUserLogTextBox.Name = "studentUserLogTextBox"
         Me.studentUserLogTextBox.Size = New System.Drawing.Size(180, 22)
-        Me.studentUserLogTextBox.TabIndex = 6
+        Me.studentUserLogTextBox.TabIndex = 1
         '
         'studentLogButton
         '
@@ -56,7 +56,7 @@ Partial Class studentLogin
         Me.studentLogButton.Location = New System.Drawing.Point(36, 250)
         Me.studentLogButton.Name = "studentLogButton"
         Me.studentLogButton.Size = New System.Drawing.Size(180, 29)
-        Me.studentLogButton.TabIndex = 1
+        Me.studentLogButton.TabIndex = 3
         Me.studentLogButton.Text = "LOGIN"
         Me.studentLogButton.UseVisualStyleBackColor = False
         '
@@ -88,7 +88,7 @@ Partial Class studentLogin
         Me.studentPassLogTextBox.Multiline = True
         Me.studentPassLogTextBox.Name = "studentPassLogTextBox"
         Me.studentPassLogTextBox.Size = New System.Drawing.Size(180, 22)
-        Me.studentPassLogTextBox.TabIndex = 1
+        Me.studentPassLogTextBox.TabIndex = 2
         '
         'Label1
         '
@@ -113,7 +113,7 @@ Partial Class studentLogin
         Me.studentLogPanel.Location = New System.Drawing.Point(48, 40)
         Me.studentLogPanel.Name = "studentLogPanel"
         Me.studentLogPanel.Size = New System.Drawing.Size(259, 355)
-        Me.studentLogPanel.TabIndex = 7
+        Me.studentLogPanel.TabIndex = 1
         '
         'studentLogBgPanel
         '
