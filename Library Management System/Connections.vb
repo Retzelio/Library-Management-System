@@ -8,7 +8,9 @@ Module Module1
     Public da As New MySqlDataAdapter
     Public ds As New DataSet
     Public dt As New DataTable
+    Public dr As MySqlDataReader
     Public sql As String
+
 
     'until here
 
