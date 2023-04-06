@@ -34,3 +34,5 @@ C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Inter
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\AxInterop.AcroPDFLib.dll
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library Management System.vbproj.ResolveComReference.cache
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.Form1.resources
+C:\Users\Les\Library-Management-System\Library Management System\bin\Debug\itextsharp.dll
+C:\Users\Les\Library-Management-System\Library Management System\bin\Debug\itextsharp.xml

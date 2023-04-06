@@ -33,7 +33,7 @@ Partial Class Form1
         Me.pdfreader.Location = New System.Drawing.Point(10, 5)
         Me.pdfreader.Name = "pdfreader"
         Me.pdfreader.OcxState = CType(resources.GetObject("pdfreader.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.pdfreader.Size = New System.Drawing.Size(784, 443)
+        Me.pdfreader.Size = New System.Drawing.Size(228, 401)
         Me.pdfreader.TabIndex = 0
         '
         'Form1

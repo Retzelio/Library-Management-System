@@ -23,6 +23,9 @@ Partial Class Home
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.fictionGradBtn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.programmingGradientBtn = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -42,11 +45,16 @@ Partial Class Home
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2GroupBox1.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel3.SuspendLayout()
         Me.Guna2Panel4.SuspendLayout()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2Panel1
@@ -216,6 +224,9 @@ Partial Class Home
         '
         'Guna2Panel2
         '
+        Me.Guna2Panel2.Controls.Add(Me.DataGridView1)
+        Me.Guna2Panel2.Controls.Add(Me.Guna2DataGridView1)
+        Me.Guna2Panel2.Controls.Add(Me.readGradBtn)
         Me.Guna2Panel2.Location = New System.Drawing.Point(7, 190)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.Size = New System.Drawing.Size(870, 427)
@@ -232,7 +243,7 @@ Partial Class Home
         Me.readGradBtn.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.readGradBtn.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.readGradBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.readGradBtn.Location = New System.Drawing.Point(1043, 519)
+        Me.readGradBtn.Location = New System.Drawing.Point(634, 218)
         Me.readGradBtn.Name = "readGradBtn"
         Me.readGradBtn.Size = New System.Drawing.Size(85, 34)
         Me.readGradBtn.TabIndex = 3
@@ -292,12 +303,68 @@ Partial Class Home
         Me.Guna2Panel4.Size = New System.Drawing.Size(377, 85)
         Me.Guna2Panel4.TabIndex = 8
         '
+        'Guna2DataGridView1
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(193, 94)
+        Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
+        Me.Guna2DataGridView1.RowHeadersVisible = False
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(240, 150)
+        Me.Guna2DataGridView1.TabIndex = 4
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.Guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4
+        Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(497, 43)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
+        Me.DataGridView1.TabIndex = 5
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1267, 628)
-        Me.Controls.Add(Me.readGradBtn)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Guna2Panel4)
         Me.Controls.Add(Me.author)
@@ -310,11 +377,14 @@ Partial Class Home
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2GroupBox1.ResumeLayout(False)
         Me.Guna2GroupBox1.PerformLayout()
+        Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel3.ResumeLayout(False)
         Me.Guna2Panel3.PerformLayout()
         Me.Guna2Panel4.ResumeLayout(False)
         Me.Guna2Panel4.PerformLayout()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -339,4 +409,6 @@ Partial Class Home
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents readGradBtn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents BindingSource1 As BindingSource
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
 End Class
