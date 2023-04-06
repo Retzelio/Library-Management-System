@@ -46,4 +46,8 @@ Public Class studentRegistration1
     Private Sub studentRegYearTextBox_TextChanged(sender As Object, e As EventArgs) Handles studentRegYearSecTextBox.TextChanged
 
     End Sub
+
+    Private Sub studentReg1BgPanel_Paint(sender As Object, e As PaintEventArgs) Handles studentReg1BgPanel.Paint
+
+    End Sub
 End Class
