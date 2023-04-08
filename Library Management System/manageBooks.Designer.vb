@@ -22,24 +22,24 @@ Partial Class manageBooks
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(manageBooks))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(manageBooks))
         Me.panel = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.manageBooksDeleteButton = New Guna.UI2.WinForms.Guna2Button()
-        Me.manageBooksUpdateButton = New Guna.UI2.WinForms.Guna2Button()
-        Me.manageBooksAddButton = New Guna.UI2.WinForms.Guna2Button()
-        Me.manageBooksSearchButton = New Guna.UI2.WinForms.Guna2Button()
-        Me.manageBooksTextBox = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.manageBooksTextBox = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.manageBooksSearchButton = New Guna.UI2.WinForms.Guna2Button()
+        Me.manageBooksAddButton = New Guna.UI2.WinForms.Guna2Button()
+        Me.manageBooksUpdateButton = New Guna.UI2.WinForms.Guna2Button()
+        Me.manageBooksDeleteButton = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.panel.SuspendLayout()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panel
@@ -52,10 +52,109 @@ Partial Class manageBooks
         Me.panel.Controls.Add(Me.manageBooksAddButton)
         Me.panel.Controls.Add(Me.manageBooksUpdateButton)
         Me.panel.Controls.Add(Me.manageBooksDeleteButton)
-        Me.panel.Location = New System.Drawing.Point(12, 65)
+        Me.panel.Location = New System.Drawing.Point(12, 77)
         Me.panel.Name = "panel"
-        Me.panel.Size = New System.Drawing.Size(902, 100)
+        Me.panel.Size = New System.Drawing.Size(902, 85)
         Me.panel.TabIndex = 0
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(470, 10)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(68, 64)
+        Me.Guna2PictureBox2.TabIndex = 7
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(417, 16)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(50, 54)
+        Me.Guna2PictureBox1.TabIndex = 6
+        Me.Guna2PictureBox1.TabStop = False
+        '
+        'manageBooksTextBox
+        '
+        Me.manageBooksTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.manageBooksTextBox.DefaultText = ""
+        Me.manageBooksTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.manageBooksTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.manageBooksTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.manageBooksTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.manageBooksTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.manageBooksTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.manageBooksTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.manageBooksTextBox.Location = New System.Drawing.Point(687, 28)
+        Me.manageBooksTextBox.Name = "manageBooksTextBox"
+        Me.manageBooksTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.manageBooksTextBox.PlaceholderText = ""
+        Me.manageBooksTextBox.SelectedText = ""
+        Me.manageBooksTextBox.Size = New System.Drawing.Size(200, 23)
+        Me.manageBooksTextBox.TabIndex = 5
+        '
+        'manageBooksSearchButton
+        '
+        Me.manageBooksSearchButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.manageBooksSearchButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.manageBooksSearchButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.manageBooksSearchButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.manageBooksSearchButton.FillColor = System.Drawing.Color.Goldenrod
+        Me.manageBooksSearchButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.manageBooksSearchButton.ForeColor = System.Drawing.Color.Black
+        Me.manageBooksSearchButton.Location = New System.Drawing.Point(591, 19)
+        Me.manageBooksSearchButton.Name = "manageBooksSearchButton"
+        Me.manageBooksSearchButton.Size = New System.Drawing.Size(90, 45)
+        Me.manageBooksSearchButton.TabIndex = 4
+        Me.manageBooksSearchButton.Text = "SEARCH"
+        '
+        'manageBooksAddButton
+        '
+        Me.manageBooksAddButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.manageBooksAddButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.manageBooksAddButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.manageBooksAddButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.manageBooksAddButton.FillColor = System.Drawing.Color.Goldenrod
+        Me.manageBooksAddButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.manageBooksAddButton.ForeColor = System.Drawing.Color.Black
+        Me.manageBooksAddButton.Location = New System.Drawing.Point(265, 10)
+        Me.manageBooksAddButton.Name = "manageBooksAddButton"
+        Me.manageBooksAddButton.Size = New System.Drawing.Size(90, 64)
+        Me.manageBooksAddButton.TabIndex = 2
+        Me.manageBooksAddButton.Text = "ADD"
+        '
+        'manageBooksUpdateButton
+        '
+        Me.manageBooksUpdateButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.manageBooksUpdateButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.manageBooksUpdateButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.manageBooksUpdateButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.manageBooksUpdateButton.FillColor = System.Drawing.Color.Goldenrod
+        Me.manageBooksUpdateButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.manageBooksUpdateButton.ForeColor = System.Drawing.Color.Black
+        Me.manageBooksUpdateButton.Location = New System.Drawing.Point(139, 10)
+        Me.manageBooksUpdateButton.Name = "manageBooksUpdateButton"
+        Me.manageBooksUpdateButton.Size = New System.Drawing.Size(90, 64)
+        Me.manageBooksUpdateButton.TabIndex = 1
+        Me.manageBooksUpdateButton.Text = "UPDATE"
+        '
+        'manageBooksDeleteButton
+        '
+        Me.manageBooksDeleteButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.manageBooksDeleteButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.manageBooksDeleteButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.manageBooksDeleteButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.manageBooksDeleteButton.FillColor = System.Drawing.Color.Goldenrod
+        Me.manageBooksDeleteButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.manageBooksDeleteButton.ForeColor = System.Drawing.Color.Black
+        Me.manageBooksDeleteButton.Location = New System.Drawing.Point(15, 10)
+        Me.manageBooksDeleteButton.Name = "manageBooksDeleteButton"
+        Me.manageBooksDeleteButton.Size = New System.Drawing.Size(90, 64)
+        Me.manageBooksDeleteButton.TabIndex = 0
+        Me.manageBooksDeleteButton.Text = "DELETE"
         '
         'Guna2DataGridView1
         '
@@ -69,7 +168,8 @@ Partial Class manageBooks
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Guna2DataGridView1.ColumnHeadersHeight = 4
+        Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -95,7 +195,7 @@ Partial Class manageBooks
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4
         Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
@@ -106,85 +206,6 @@ Partial Class manageBooks
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'manageBooksDeleteButton
-        '
-        Me.manageBooksDeleteButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.manageBooksDeleteButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.manageBooksDeleteButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.manageBooksDeleteButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.manageBooksDeleteButton.FillColor = System.Drawing.Color.Goldenrod
-        Me.manageBooksDeleteButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.manageBooksDeleteButton.ForeColor = System.Drawing.Color.Black
-        Me.manageBooksDeleteButton.Location = New System.Drawing.Point(15, 16)
-        Me.manageBooksDeleteButton.Name = "manageBooksDeleteButton"
-        Me.manageBooksDeleteButton.Size = New System.Drawing.Size(90, 64)
-        Me.manageBooksDeleteButton.TabIndex = 0
-        Me.manageBooksDeleteButton.Text = "DELETE"
-        '
-        'manageBooksUpdateButton
-        '
-        Me.manageBooksUpdateButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.manageBooksUpdateButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.manageBooksUpdateButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.manageBooksUpdateButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.manageBooksUpdateButton.FillColor = System.Drawing.Color.Goldenrod
-        Me.manageBooksUpdateButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.manageBooksUpdateButton.ForeColor = System.Drawing.Color.Black
-        Me.manageBooksUpdateButton.Location = New System.Drawing.Point(139, 16)
-        Me.manageBooksUpdateButton.Name = "manageBooksUpdateButton"
-        Me.manageBooksUpdateButton.Size = New System.Drawing.Size(90, 64)
-        Me.manageBooksUpdateButton.TabIndex = 1
-        Me.manageBooksUpdateButton.Text = "UPDATE"
-        '
-        'manageBooksAddButton
-        '
-        Me.manageBooksAddButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.manageBooksAddButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.manageBooksAddButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.manageBooksAddButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.manageBooksAddButton.FillColor = System.Drawing.Color.Goldenrod
-        Me.manageBooksAddButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.manageBooksAddButton.ForeColor = System.Drawing.Color.Black
-        Me.manageBooksAddButton.Location = New System.Drawing.Point(265, 16)
-        Me.manageBooksAddButton.Name = "manageBooksAddButton"
-        Me.manageBooksAddButton.Size = New System.Drawing.Size(90, 64)
-        Me.manageBooksAddButton.TabIndex = 2
-        Me.manageBooksAddButton.Text = "ADD"
-        '
-        'manageBooksSearchButton
-        '
-        Me.manageBooksSearchButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.manageBooksSearchButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.manageBooksSearchButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.manageBooksSearchButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.manageBooksSearchButton.FillColor = System.Drawing.Color.Goldenrod
-        Me.manageBooksSearchButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.manageBooksSearchButton.ForeColor = System.Drawing.Color.Black
-        Me.manageBooksSearchButton.Location = New System.Drawing.Point(591, 25)
-        Me.manageBooksSearchButton.Name = "manageBooksSearchButton"
-        Me.manageBooksSearchButton.Size = New System.Drawing.Size(90, 45)
-        Me.manageBooksSearchButton.TabIndex = 4
-        Me.manageBooksSearchButton.Text = "SEARCH"
-        '
-        'manageBooksTextBox
-        '
-        Me.manageBooksTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.manageBooksTextBox.DefaultText = ""
-        Me.manageBooksTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.manageBooksTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.manageBooksTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.manageBooksTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.manageBooksTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.manageBooksTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.manageBooksTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.manageBooksTextBox.Location = New System.Drawing.Point(687, 28)
-        Me.manageBooksTextBox.Name = "manageBooksTextBox"
-        Me.manageBooksTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.manageBooksTextBox.PlaceholderText = ""
-        Me.manageBooksTextBox.SelectedText = ""
-        Me.manageBooksTextBox.Size = New System.Drawing.Size(200, 36)
-        Me.manageBooksTextBox.TabIndex = 5
-        '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -194,26 +215,6 @@ Partial Class manageBooks
         Me.Label1.Size = New System.Drawing.Size(248, 37)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "MANAGE BOOKS"
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(417, 22)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(50, 54)
-        Me.Guna2PictureBox1.TabIndex = 6
-        Me.Guna2PictureBox1.TabStop = False
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(470, 16)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(68, 64)
-        Me.Guna2PictureBox2.TabIndex = 7
-        Me.Guna2PictureBox2.TabStop = False
         '
         'manageBooks
         '
@@ -227,9 +228,9 @@ Partial Class manageBooks
         Me.Name = "manageBooks"
         Me.Text = "Manage Books"
         Me.panel.ResumeLayout(False)
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

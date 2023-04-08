@@ -104,6 +104,12 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="manageStudents.Designer.vb">
+      <DependentUpon>manageStudents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manageStudents.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="manageUsers.Designer.vb">
       <DependentUpon>manageUsers.vb</DependentUpon>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageStudents.resx">
+      <DependentUpon>manageStudents.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manageBooks.resx">
       <DependentUpon>manageBooks.vb</DependentUpon>
