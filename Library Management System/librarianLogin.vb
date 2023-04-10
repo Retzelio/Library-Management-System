@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class adminLogin
+Public Class librarianLogin
     Private Sub Button1_Click(sender As Object, e As EventArgs)
 
     End Sub

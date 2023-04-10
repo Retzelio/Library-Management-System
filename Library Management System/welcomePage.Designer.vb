@@ -27,7 +27,7 @@ Partial Class welcomePage
         Me.welcomeLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.studentBtn = New Guna.UI2.WinForms.Guna2Button()
-        Me.adminBtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.librarianBtn = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -78,20 +78,20 @@ Partial Class welcomePage
         Me.studentBtn.TabIndex = 3
         Me.studentBtn.Text = "STUDENT"
         '
-        'adminBtn
+        'librarianBtn
         '
-        Me.adminBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.adminBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.adminBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.adminBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.adminBtn.FillColor = System.Drawing.Color.Goldenrod
-        Me.adminBtn.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.adminBtn.ForeColor = System.Drawing.Color.Black
-        Me.adminBtn.Location = New System.Drawing.Point(118, 453)
-        Me.adminBtn.Name = "adminBtn"
-        Me.adminBtn.Size = New System.Drawing.Size(180, 45)
-        Me.adminBtn.TabIndex = 4
-        Me.adminBtn.Text = "ADMIN"
+        Me.librarianBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.librarianBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.librarianBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.librarianBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.librarianBtn.FillColor = System.Drawing.Color.Goldenrod
+        Me.librarianBtn.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.librarianBtn.ForeColor = System.Drawing.Color.Black
+        Me.librarianBtn.Location = New System.Drawing.Point(118, 453)
+        Me.librarianBtn.Name = "librarianBtn"
+        Me.librarianBtn.Size = New System.Drawing.Size(180, 45)
+        Me.librarianBtn.TabIndex = 4
+        Me.librarianBtn.Text = "LIBARIAN"
         '
         'welcomePage
         '
@@ -99,7 +99,7 @@ Partial Class welcomePage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(113, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(416, 565)
-        Me.Controls.Add(Me.adminBtn)
+        Me.Controls.Add(Me.librarianBtn)
         Me.Controls.Add(Me.studentBtn)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.welcomeLabel)
@@ -116,5 +116,5 @@ Partial Class welcomePage
     Friend WithEvents welcomeLabel As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents studentBtn As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents adminBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents librarianBtn As Guna.UI2.WinForms.Guna2Button
 End Class

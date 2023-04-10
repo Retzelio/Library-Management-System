@@ -3,7 +3,7 @@
         studentLogin.Show()
     End Sub
 
-    Private Sub adminBtn_Click(sender As Object, e As EventArgs) Handles adminBtn.Click
-        adminLogin.Show()
+    Private Sub librarianBtn_Click(sender As Object, e As EventArgs) Handles librarianBtn.Click
+        librarianLogin.Show()
     End Sub
 End Class

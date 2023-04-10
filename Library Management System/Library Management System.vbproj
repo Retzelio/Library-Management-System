@@ -91,16 +91,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adminLogin.Designer.vb">
-      <DependentUpon>adminLogin.vb</DependentUpon>
+    <Compile Include="librarianLogin.Designer.vb">
+      <DependentUpon>librarianLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="adminLogin.vb">
+    <Compile Include="librarianLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="adminRegistration.Designer.vb">
-      <DependentUpon>adminRegistration.vb</DependentUpon>
+    <Compile Include="librarianRegistration.Designer.vb">
+      <DependentUpon>librarianRegistration.vb</DependentUpon>
     </Compile>
-    <Compile Include="adminRegistration.vb">
+    <Compile Include="librarianRegistration.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connections.vb" />
@@ -128,10 +128,10 @@
     <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="studentRegistration1.Designer.vb">
-      <DependentUpon>studentRegistration1.vb</DependentUpon>
+    <Compile Include="studentRegistration.Designer.vb">
+      <DependentUpon>studentRegistration.vb</DependentUpon>
     </Compile>
-    <Compile Include="studentRegistration1.vb">
+    <Compile Include="studentRegistration.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="studentLogin.vb">
@@ -165,11 +165,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="adminLogin.resx">
-      <DependentUpon>adminLogin.vb</DependentUpon>
+    <EmbeddedResource Include="librarianLogin.resx">
+      <DependentUpon>librarianLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="adminRegistration.resx">
-      <DependentUpon>adminRegistration.vb</DependentUpon>
+    <EmbeddedResource Include="librarianRegistration.resx">
+      <DependentUpon>librarianRegistration.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -192,8 +192,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="studentRegistration1.resx">
-      <DependentUpon>studentRegistration1.vb</DependentUpon>
+    <EmbeddedResource Include="studentRegistration.resx">
+      <DependentUpon>studentRegistration.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="welcomePage.resx">
       <DependentUpon>welcomePage.vb</DependentUpon>

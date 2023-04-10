@@ -58,3 +58,6 @@ C:\Users\johne\source\repos\Library Management System\Library Management System\
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.manageBooks.resources
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.manageUsers.resources
 C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.welcomePage.resources
+C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.librarianLogin.resources
+C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.librarianRegistration.resources
+C:\Users\Les\Library-Management-System\Library Management System\obj\Debug\Library_Management_System.studentRegistration.resources
