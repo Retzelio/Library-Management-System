@@ -76,7 +76,7 @@ Partial Class studentLogin
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(33, 107)
+        Me.Label2.Location = New System.Drawing.Point(33, 102)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(84, 16)
         Me.Label2.TabIndex = 3
@@ -95,7 +95,7 @@ Partial Class studentLogin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(77, 33)
+        Me.Label1.Location = New System.Drawing.Point(40, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(92, 29)
         Me.Label1.TabIndex = 2

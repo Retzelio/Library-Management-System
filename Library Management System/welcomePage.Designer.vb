@@ -41,11 +41,11 @@ Partial Class welcomePage
         '
         Me.titleLabel.AutoSize = True
         Me.titleLabel.BackColor = System.Drawing.Color.Transparent
-        Me.titleLabel.Font = New System.Drawing.Font("Myanmar Text", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.titleLabel.Font = New System.Drawing.Font("EB Garamond Medium", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.titleLabel.ForeColor = System.Drawing.Color.Transparent
-        Me.titleLabel.Location = New System.Drawing.Point(20, 16)
+        Me.titleLabel.Location = New System.Drawing.Point(12, 11)
         Me.titleLabel.Name = "titleLabel"
-        Me.titleLabel.Size = New System.Drawing.Size(538, 62)
+        Me.titleLabel.Size = New System.Drawing.Size(545, 46)
         Me.titleLabel.TabIndex = 0
         Me.titleLabel.Text = "LIBRARY MANAGEMENT SYSTEM"
         '
@@ -70,9 +70,9 @@ Partial Class welcomePage
         Me.studentBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.studentBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.studentBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.studentBtn.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.studentBtn.Font = New System.Drawing.Font("Rubik Medium", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.studentBtn.ForeColor = System.Drawing.Color.White
-        Me.studentBtn.Location = New System.Drawing.Point(60, 224)
+        Me.studentBtn.Location = New System.Drawing.Point(61, 224)
         Me.studentBtn.Name = "studentBtn"
         Me.studentBtn.Size = New System.Drawing.Size(167, 45)
         Me.studentBtn.TabIndex = 3
@@ -89,7 +89,7 @@ Partial Class welcomePage
         Me.librarianBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.librarianBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.librarianBtn.FocusedColor = System.Drawing.SystemColors.ActiveCaption
-        Me.librarianBtn.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.librarianBtn.Font = New System.Drawing.Font("Rubik Medium", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.librarianBtn.ForeColor = System.Drawing.Color.White
         Me.librarianBtn.Location = New System.Drawing.Point(60, 284)
         Me.librarianBtn.Name = "librarianBtn"
@@ -101,11 +101,11 @@ Partial Class welcomePage
         '
         Me.welcomeLabel.AutoSize = True
         Me.welcomeLabel.BackColor = System.Drawing.Color.Transparent
-        Me.welcomeLabel.Font = New System.Drawing.Font("Cascadia Code", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.welcomeLabel.Font = New System.Drawing.Font("Rubik", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.welcomeLabel.Location = New System.Drawing.Point(53, 155)
+        Me.welcomeLabel.Location = New System.Drawing.Point(41, 154)
         Me.welcomeLabel.Name = "welcomeLabel"
-        Me.welcomeLabel.Size = New System.Drawing.Size(176, 49)
+        Me.welcomeLabel.Size = New System.Drawing.Size(204, 46)
         Me.welcomeLabel.TabIndex = 1
         Me.welcomeLabel.Text = "WELCOME"
         '
@@ -131,7 +131,7 @@ Partial Class welcomePage
         Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox1.Image = CType(resources.GetObject("Guna2PictureBox1.Image"), System.Drawing.Image)
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(82, 27)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(91, 27)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(117, 117)
         Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
