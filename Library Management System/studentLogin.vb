@@ -28,21 +28,21 @@ Public Class studentLogin
 
     End Sub
 
-    Private Sub studentLogButton_Click(sender As Object, e As EventArgs) Handles studentLogButton.Click
+    Private Sub studentLogButton_Click(sender As Object, e As EventArgs)
         openConnnection()
 
 
 
         Try
-            sql = "SELECT * FROM student WHERE username = '" & studentUserLogTextBox.Text() & "' AND password = '" & studentPassLogTextBox.Text() & "'"
+            sql = "SELECT * FROM students WHERE username = '" & studentUserLogTextBox.Text() & "' AND password = '" & studentPassLogTextBox.Text() & "'"
             cmd = New MySqlCommand(sql, connection)
             da = New MySqlDataAdapter(cmd)
             dt = New DataTable
             da.Fill(dt)
 
             If dt.Rows.Count > 0 Then
-                Dim username = dt.Rows(0).Item(6)
-                Dim password = dt.Rows(0).Item(7)
+                Dim username = dt.Rows(0).Item(7)
+                Dim password = dt.Rows(0).Item(8)
 
                 If username = studentUserLogTextBox.Text() And password = studentPassLogTextBox.Text() Then
                     MessageBox.Show("Login Success!")

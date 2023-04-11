@@ -24,16 +24,16 @@ Partial Class studentLogin
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(studentLogin))
         Me.studentUserLogTextBox = New System.Windows.Forms.TextBox()
-        Me.studentLogButton = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.studentPassLogTextBox = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.studentLoginLbl = New System.Windows.Forms.Label()
         Me.studentLogPanel = New System.Windows.Forms.Panel()
         Me.studentLogBgPanel = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.studentLogButton = New Guna.UI2.WinForms.Guna2Button()
         Me.studentLogPanel.SuspendLayout()
         Me.studentLogBgPanel.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,81 +43,72 @@ Partial Class studentLogin
         '
         'studentUserLogTextBox
         '
-        Me.studentUserLogTextBox.Location = New System.Drawing.Point(36, 126)
+        Me.studentUserLogTextBox.Font = New System.Drawing.Font("Poppins", 12.0!)
+        Me.studentUserLogTextBox.Location = New System.Drawing.Point(33, 136)
         Me.studentUserLogTextBox.Multiline = True
         Me.studentUserLogTextBox.Name = "studentUserLogTextBox"
-        Me.studentUserLogTextBox.Size = New System.Drawing.Size(180, 22)
+        Me.studentUserLogTextBox.Size = New System.Drawing.Size(190, 28)
         Me.studentUserLogTextBox.TabIndex = 1
-        '
-        'studentLogButton
-        '
-        Me.studentLogButton.BackColor = System.Drawing.Color.Goldenrod
-        Me.studentLogButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.studentLogButton.Location = New System.Drawing.Point(36, 250)
-        Me.studentLogButton.Name = "studentLogButton"
-        Me.studentLogButton.Size = New System.Drawing.Size(180, 29)
-        Me.studentLogButton.TabIndex = 3
-        Me.studentLogButton.Text = "LOGIN"
-        Me.studentLogButton.UseVisualStyleBackColor = False
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Poppins SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(33, 167)
+        Me.Label4.Location = New System.Drawing.Point(31, 171)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 16)
+        Me.Label4.Size = New System.Drawing.Size(103, 28)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "PASSWORD"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Poppins SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(33, 102)
+        Me.Label2.Location = New System.Drawing.Point(29, 104)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(84, 16)
+        Me.Label2.Size = New System.Drawing.Size(98, 28)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "USERNAME"
         '
         'studentPassLogTextBox
         '
-        Me.studentPassLogTextBox.Location = New System.Drawing.Point(36, 186)
+        Me.studentPassLogTextBox.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.studentPassLogTextBox.Location = New System.Drawing.Point(32, 202)
         Me.studentPassLogTextBox.Multiline = True
         Me.studentPassLogTextBox.Name = "studentPassLogTextBox"
-        Me.studentPassLogTextBox.Size = New System.Drawing.Size(180, 22)
+        Me.studentPassLogTextBox.Size = New System.Drawing.Size(190, 28)
         Me.studentPassLogTextBox.TabIndex = 2
         '
-        'Label1
+        'studentLoginLbl
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(40, 23)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 29)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "LOGIN"
+        Me.studentLoginLbl.AutoSize = True
+        Me.studentLoginLbl.Font = New System.Drawing.Font("Schibsted Grotesk ExtraBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.studentLoginLbl.ForeColor = System.Drawing.Color.White
+        Me.studentLoginLbl.Location = New System.Drawing.Point(7, 27)
+        Me.studentLoginLbl.Name = "studentLoginLbl"
+        Me.studentLoginLbl.Size = New System.Drawing.Size(246, 40)
+        Me.studentLoginLbl.TabIndex = 2
+        Me.studentLoginLbl.Text = "STUDENT LOGIN"
         '
         'studentLogPanel
         '
-        Me.studentLogPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(76, Byte), Integer), CType(CType(113, Byte), Integer))
-        Me.studentLogPanel.Controls.Add(Me.studentUserLogTextBox)
+        Me.studentLogPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
         Me.studentLogPanel.Controls.Add(Me.studentLogButton)
-        Me.studentLogPanel.Controls.Add(Me.Label1)
+        Me.studentLogPanel.Controls.Add(Me.studentUserLogTextBox)
+        Me.studentLogPanel.Controls.Add(Me.studentLoginLbl)
         Me.studentLogPanel.Controls.Add(Me.Label4)
         Me.studentLogPanel.Controls.Add(Me.studentPassLogTextBox)
         Me.studentLogPanel.Controls.Add(Me.Label2)
-        Me.studentLogPanel.Location = New System.Drawing.Point(48, 40)
+        Me.studentLogPanel.Location = New System.Drawing.Point(48, 49)
         Me.studentLogPanel.Name = "studentLogPanel"
         Me.studentLogPanel.Size = New System.Drawing.Size(259, 355)
         Me.studentLogPanel.TabIndex = 1
         '
         'studentLogBgPanel
         '
-        Me.studentLogBgPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
+        Me.studentLogBgPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.studentLogBgPanel.Controls.Add(Me.PictureBox3)
         Me.studentLogBgPanel.Controls.Add(Me.PictureBox2)
         Me.studentLogBgPanel.Controls.Add(Me.PictureBox1)
@@ -155,6 +146,24 @@ Partial Class studentLogin
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'studentLogButton
+        '
+        Me.studentLogButton.BackColor = System.Drawing.Color.Transparent
+        Me.studentLogButton.BorderColor = System.Drawing.Color.Transparent
+        Me.studentLogButton.BorderRadius = 20
+        Me.studentLogButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.studentLogButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.studentLogButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.studentLogButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.studentLogButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.studentLogButton.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.studentLogButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.studentLogButton.Location = New System.Drawing.Point(56, 268)
+        Me.studentLogButton.Name = "studentLogButton"
+        Me.studentLogButton.Size = New System.Drawing.Size(146, 40)
+        Me.studentLogButton.TabIndex = 6
+        Me.studentLogButton.Text = "LOGIN"
+        '
         'studentLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -176,12 +185,12 @@ Partial Class studentLogin
     Friend WithEvents studentPassLogTextBox As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents studentLoginLbl As Label
     Friend WithEvents studentUserLogTextBox As TextBox
-    Friend WithEvents studentLogButton As Button
     Friend WithEvents studentLogPanel As Panel
     Friend WithEvents studentLogBgPanel As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents studentLogButton As Guna.UI2.WinForms.Guna2Button
 End Class

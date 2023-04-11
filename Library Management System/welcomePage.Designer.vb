@@ -101,11 +101,11 @@ Partial Class welcomePage
         '
         Me.welcomeLabel.AutoSize = True
         Me.welcomeLabel.BackColor = System.Drawing.Color.Transparent
-        Me.welcomeLabel.Font = New System.Drawing.Font("Rubik", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.welcomeLabel.Font = New System.Drawing.Font("Barlow Semi Condensed Black", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.welcomeLabel.Location = New System.Drawing.Point(41, 154)
+        Me.welcomeLabel.Location = New System.Drawing.Point(60, 149)
         Me.welcomeLabel.Name = "welcomeLabel"
-        Me.welcomeLabel.Size = New System.Drawing.Size(204, 46)
+        Me.welcomeLabel.Size = New System.Drawing.Size(174, 50)
         Me.welcomeLabel.TabIndex = 1
         Me.welcomeLabel.Text = "WELCOME"
         '
