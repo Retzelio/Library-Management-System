@@ -34,6 +34,7 @@ Partial Class studentLogin
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.studentLogButton = New Guna.UI2.WinForms.Guna2Button()
+        Me.studentCreateAccLbl = New System.Windows.Forms.Label()
         Me.studentLogPanel.SuspendLayout()
         Me.studentLogBgPanel.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -43,6 +44,7 @@ Partial Class studentLogin
         '
         'studentUserLogTextBox
         '
+        Me.studentUserLogTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.studentUserLogTextBox.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.studentUserLogTextBox.Location = New System.Drawing.Point(33, 136)
         Me.studentUserLogTextBox.Multiline = True
@@ -74,6 +76,7 @@ Partial Class studentLogin
         '
         'studentPassLogTextBox
         '
+        Me.studentPassLogTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.studentPassLogTextBox.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.studentPassLogTextBox.Location = New System.Drawing.Point(32, 202)
         Me.studentPassLogTextBox.Multiline = True
@@ -84,7 +87,7 @@ Partial Class studentLogin
         'studentLoginLbl
         '
         Me.studentLoginLbl.AutoSize = True
-        Me.studentLoginLbl.Font = New System.Drawing.Font("Schibsted Grotesk ExtraBold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.studentLoginLbl.Font = New System.Drawing.Font("Schibsted Grotesk ExtraBold", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.studentLoginLbl.ForeColor = System.Drawing.Color.White
         Me.studentLoginLbl.Location = New System.Drawing.Point(7, 27)
         Me.studentLoginLbl.Name = "studentLoginLbl"
@@ -95,6 +98,7 @@ Partial Class studentLogin
         'studentLogPanel
         '
         Me.studentLogPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.studentLogPanel.Controls.Add(Me.studentCreateAccLbl)
         Me.studentLogPanel.Controls.Add(Me.studentLogButton)
         Me.studentLogPanel.Controls.Add(Me.studentUserLogTextBox)
         Me.studentLogPanel.Controls.Add(Me.studentLoginLbl)
@@ -158,11 +162,22 @@ Partial Class studentLogin
         Me.studentLogButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
         Me.studentLogButton.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold)
         Me.studentLogButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.studentLogButton.Location = New System.Drawing.Point(56, 268)
+        Me.studentLogButton.Location = New System.Drawing.Point(52, 254)
         Me.studentLogButton.Name = "studentLogButton"
         Me.studentLogButton.Size = New System.Drawing.Size(146, 40)
         Me.studentLogButton.TabIndex = 6
         Me.studentLogButton.Text = "LOGIN"
+        '
+        'studentCreateAccLbl
+        '
+        Me.studentCreateAccLbl.AutoSize = True
+        Me.studentCreateAccLbl.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.studentCreateAccLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.studentCreateAccLbl.Location = New System.Drawing.Point(70, 305)
+        Me.studentCreateAccLbl.Name = "studentCreateAccLbl"
+        Me.studentCreateAccLbl.Size = New System.Drawing.Size(112, 19)
+        Me.studentCreateAccLbl.TabIndex = 13
+        Me.studentCreateAccLbl.Text = "Create an account"
         '
         'studentLogin
         '
@@ -193,4 +208,5 @@ Partial Class studentLogin
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents studentLogButton As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents studentCreateAccLbl As Label
 End Class

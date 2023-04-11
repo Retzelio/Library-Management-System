@@ -59,4 +59,8 @@ Public Class studentLogin
         End Try
         connection.Close()
     End Sub
+
+    Private Sub studentCreateAccLbl_Click(sender As Object, e As EventArgs) Handles studentCreateAccLbl.Click
+        studentRegistration.Show()
+    End Sub
 End Class

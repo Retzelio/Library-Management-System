@@ -5,7 +5,7 @@ Public Class librarianLogin
 
     End Sub
 
-    Private Sub adminLogButton_Click(sender As Object, e As EventArgs) Handles adminLogButton.Click
+    Private Sub adminLogButton_Click(sender As Object, e As EventArgs)
         openConnnection()
 
         Try
@@ -33,5 +33,9 @@ Public Class librarianLogin
             MessageBox.Show(ex.Message.ToString())
         End Try
         connection.Close()
+    End Sub
+
+    Private Sub createAccLbl_Click(sender As Object, e As EventArgs) Handles librarianCreateAccLbl.Click
+        librarianRegistration.Show()
     End Sub
 End Class
