@@ -26,4 +26,12 @@ Public Class librarianRegistration
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
+
+    Private Sub librarianRegistration_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim screenWidth As Integer = Screen.PrimaryScreen.WorkingArea.Width
+        Dim screenHeight As Integer = Screen.PrimaryScreen.WorkingArea.Height
+        Me.Location = New Point((screenWidth - Me.Width) / 2, (screenHeight - Me.Height) / 2)
+
+
+    End Sub
 End Class

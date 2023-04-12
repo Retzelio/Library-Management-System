@@ -26,13 +26,13 @@ Partial Class librarianLogin
         Me.adminLogBgPanel = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.adminLogPanel = New System.Windows.Forms.Panel()
+        Me.librarianCreateAccLbl = New System.Windows.Forms.Label()
+        Me.adminLogButton = New Guna.UI2.WinForms.Guna2Button()
         Me.adminUserLogTextBox = New System.Windows.Forms.TextBox()
         Me.loginLbl = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.adminPassLogTextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.adminLogButton = New Guna.UI2.WinForms.Guna2Button()
-        Me.librarianCreateAccLbl = New System.Windows.Forms.Label()
         Me.adminLogBgPanel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.adminLogPanel.SuspendLayout()
@@ -74,9 +74,39 @@ Partial Class librarianLogin
         Me.adminLogPanel.Size = New System.Drawing.Size(259, 355)
         Me.adminLogPanel.TabIndex = 1
         '
+        'librarianCreateAccLbl
+        '
+        Me.librarianCreateAccLbl.AutoSize = True
+        Me.librarianCreateAccLbl.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.librarianCreateAccLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.librarianCreateAccLbl.Location = New System.Drawing.Point(67, 301)
+        Me.librarianCreateAccLbl.Name = "librarianCreateAccLbl"
+        Me.librarianCreateAccLbl.Size = New System.Drawing.Size(112, 19)
+        Me.librarianCreateAccLbl.TabIndex = 12
+        Me.librarianCreateAccLbl.Text = "Create an account"
+        '
+        'adminLogButton
+        '
+        Me.adminLogButton.BackColor = System.Drawing.Color.Transparent
+        Me.adminLogButton.BorderColor = System.Drawing.Color.Transparent
+        Me.adminLogButton.BorderRadius = 20
+        Me.adminLogButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.adminLogButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.adminLogButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.adminLogButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.adminLogButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.adminLogButton.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.adminLogButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.adminLogButton.Location = New System.Drawing.Point(53, 249)
+        Me.adminLogButton.Name = "adminLogButton"
+        Me.adminLogButton.Size = New System.Drawing.Size(146, 40)
+        Me.adminLogButton.TabIndex = 11
+        Me.adminLogButton.Text = "LOGIN"
+        '
         'adminUserLogTextBox
         '
         Me.adminUserLogTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.adminUserLogTextBox.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.adminUserLogTextBox.Location = New System.Drawing.Point(32, 117)
         Me.adminUserLogTextBox.Multiline = True
         Me.adminUserLogTextBox.Name = "adminUserLogTextBox"
@@ -108,6 +138,7 @@ Partial Class librarianLogin
         'adminPassLogTextBox
         '
         Me.adminPassLogTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.adminPassLogTextBox.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.adminPassLogTextBox.Location = New System.Drawing.Point(32, 195)
         Me.adminPassLogTextBox.Multiline = True
         Me.adminPassLogTextBox.Name = "adminPassLogTextBox"
@@ -124,35 +155,6 @@ Partial Class librarianLogin
         Me.Label2.Size = New System.Drawing.Size(104, 28)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "USERNAME"
-        '
-        'adminLogButton
-        '
-        Me.adminLogButton.BackColor = System.Drawing.Color.Transparent
-        Me.adminLogButton.BorderColor = System.Drawing.Color.Transparent
-        Me.adminLogButton.BorderRadius = 20
-        Me.adminLogButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.adminLogButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.adminLogButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.adminLogButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.adminLogButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.adminLogButton.Font = New System.Drawing.Font("Rubik Medium", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.adminLogButton.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.adminLogButton.Location = New System.Drawing.Point(53, 249)
-        Me.adminLogButton.Name = "adminLogButton"
-        Me.adminLogButton.Size = New System.Drawing.Size(146, 40)
-        Me.adminLogButton.TabIndex = 11
-        Me.adminLogButton.Text = "LOGIN"
-        '
-        'librarianCreateAccLbl
-        '
-        Me.librarianCreateAccLbl.AutoSize = True
-        Me.librarianCreateAccLbl.Font = New System.Drawing.Font("Poppins", 8.0!)
-        Me.librarianCreateAccLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
-        Me.librarianCreateAccLbl.Location = New System.Drawing.Point(67, 301)
-        Me.librarianCreateAccLbl.Name = "librarianCreateAccLbl"
-        Me.librarianCreateAccLbl.Size = New System.Drawing.Size(112, 19)
-        Me.librarianCreateAccLbl.TabIndex = 12
-        Me.librarianCreateAccLbl.Text = "Create an account"
         '
         'librarianLogin
         '

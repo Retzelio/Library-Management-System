@@ -23,11 +23,9 @@ Partial Class librarianRegistration
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(librarianRegistration))
-        Me.adminRegBgPanel = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.adminRegPanel = New System.Windows.Forms.Panel()
+        Me.adminLnameRegTextBox = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.adminPassRegTextBox = New System.Windows.Forms.TextBox()
         Me.adminFnameRegTextBox = New System.Windows.Forms.TextBox()
@@ -36,54 +34,13 @@ Partial Class librarianRegistration
         Me.Label4 = New System.Windows.Forms.Label()
         Me.adminUserRegTextBox = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.adminLnameRegTextBox = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.adminRegBgPanel.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.adminRegPanel.SuspendLayout()
+        Me.Guna2GroupBox1.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'adminRegBgPanel
-        '
-        Me.adminRegBgPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(56, Byte), Integer))
-        Me.adminRegBgPanel.Controls.Add(Me.PictureBox3)
-        Me.adminRegBgPanel.Controls.Add(Me.PictureBox2)
-        Me.adminRegBgPanel.Controls.Add(Me.PictureBox1)
-        Me.adminRegBgPanel.Location = New System.Drawing.Point(374, 0)
-        Me.adminRegBgPanel.Name = "adminRegBgPanel"
-        Me.adminRegBgPanel.Size = New System.Drawing.Size(427, 460)
-        Me.adminRegBgPanel.TabIndex = 12
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(160, 239)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(100, 90)
-        Me.PictureBox3.TabIndex = 5
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(212, 132)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(98, 101)
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(116, 132)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(90, 101)
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
         '
         'adminRegPanel
         '
@@ -102,6 +59,25 @@ Partial Class librarianRegistration
         Me.adminRegPanel.Name = "adminRegPanel"
         Me.adminRegPanel.Size = New System.Drawing.Size(259, 355)
         Me.adminRegPanel.TabIndex = 0
+        '
+        'adminLnameRegTextBox
+        '
+        Me.adminLnameRegTextBox.Location = New System.Drawing.Point(39, 150)
+        Me.adminLnameRegTextBox.Multiline = True
+        Me.adminLnameRegTextBox.Name = "adminLnameRegTextBox"
+        Me.adminLnameRegTextBox.Size = New System.Drawing.Size(180, 22)
+        Me.adminLnameRegTextBox.TabIndex = 2
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(36, 131)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(85, 16)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "FIRSTNAME"
         '
         'Label3
         '
@@ -182,45 +158,62 @@ Partial Class librarianRegistration
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "LASTNAME"
         '
-        'adminLnameRegTextBox
+        'Guna2GroupBox1
         '
-        Me.adminLnameRegTextBox.Location = New System.Drawing.Point(39, 150)
-        Me.adminLnameRegTextBox.Multiline = True
-        Me.adminLnameRegTextBox.Name = "adminLnameRegTextBox"
-        Me.adminLnameRegTextBox.Size = New System.Drawing.Size(180, 22)
-        Me.adminLnameRegTextBox.TabIndex = 2
+        Me.Guna2GroupBox1.BorderRadius = 30
+        Me.Guna2GroupBox1.Controls.Add(Me.Label8)
+        Me.Guna2GroupBox1.Controls.Add(Me.Guna2PictureBox2)
+        Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(443, 10)
+        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(313, 429)
+        Me.Guna2GroupBox1.TabIndex = 6
         '
-        'Label5
+        'Label8
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(36, 131)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(85, 16)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "FIRSTNAME"
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Poppins Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(108, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(26, 25)
+        Me.Label8.MaximumSize = New System.Drawing.Size(300, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(267, 44)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = """Connect to the world's knowledge with our library system."""
         '
-        'adminRegistration
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(33, 107)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(256, 256)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Guna2PictureBox2.TabIndex = 22
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'librarianRegistration
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.adminRegBgPanel)
+        Me.ClientSize = New System.Drawing.Size(905, 474)
+        Me.Controls.Add(Me.Guna2GroupBox1)
         Me.Controls.Add(Me.adminRegPanel)
-        Me.Name = "adminRegistration"
+        Me.Name = "librarianRegistration"
         Me.Text = "Admin Registration"
-        Me.adminRegBgPanel.ResumeLayout(False)
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.adminRegPanel.ResumeLayout(False)
         Me.adminRegPanel.PerformLayout()
+        Me.Guna2GroupBox1.ResumeLayout(False)
+        Me.Guna2GroupBox1.PerformLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents adminRegBgPanel As Panel
     Friend WithEvents adminRegPanel As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents adminPassRegTextBox As TextBox
@@ -230,9 +223,9 @@ Partial Class librarianRegistration
     Friend WithEvents Label4 As Label
     Friend WithEvents adminUserRegTextBox As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents adminLnameRegTextBox As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
 End Class
